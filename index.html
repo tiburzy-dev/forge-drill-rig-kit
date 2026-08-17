@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="FORGE / 03 — a procedural Three.js and Vite underground drill rig asset kit." />
+    <meta property="og:title" content="FORGE / 03 — Underground Drill Rig" />
+    <meta property="og:description" content="A production-ready procedural 3D asset kit for Three.js and Vite. 12 USDC on Base." />
+    <meta property="og:image" content="assets/forge-03-preview.png" />
+    <title>FORGE / 03 — Underground Drill Rig</title>
+    <style>
+      :root { color-scheme: dark; --bg: #090b0d; --panel: #12161a; --line: #2a333a; --text: #f4f1e9; --muted: #aeb8bd; --accent: #f26c35; --accent-soft: #ffc457; }
+      * { box-sizing: border-box; }
+      body { margin: 0; background: radial-gradient(circle at 75% 0%, #273036 0, var(--bg) 40rem); color: var(--text); font: 16px/1.6 Inter, ui-sans-serif, system-ui, sans-serif; }
+      a { color: inherit; }
+      .wrap { max-width: 1120px; margin: 0 auto; padding: 28px 24px 72px; }
+      header { display: flex; justify-content: space-between; align-items: center; gap: 18px; padding-bottom: 52px; }
+      .brand { font-weight: 900; letter-spacing: .18em; font-size: .9rem; }
+      .tag { color: var(--accent-soft); font-size: .74rem; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; }
+      .hero { display: grid; grid-template-columns: 1fr 1.04fr; gap: 54px; align-items: center; }
+      h1 { font-size: clamp(3rem, 7vw, 6.3rem); line-height: .92; margin: 16px 0 24px; letter-spacing: -.07em; max-width: 680px; }
+      h1 span { color: var(--accent); }
+      .lead { color: var(--muted); font-size: 1.16rem; max-width: 560px; }
+      .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+      .button { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 18px; border: 2px solid var(--accent); border-radius: 8px; background: var(--accent); color: #1b100a; font-weight: 900; text-decoration: none; }
+      .button.secondary { border-color: var(--line); background: var(--panel); color: var(--text); }
+      .price { margin-top: 24px; color: var(--accent-soft); font-weight: 800; letter-spacing: .06em; }
+      .preview { border: 1px solid var(--line); padding: 10px; background: #0f1316; box-shadow: 16px 16px 0 #050607; }
+      .preview img { display: block; width: 100%; height: auto; }
+      section { border-top: 1px solid var(--line); margin-top: 76px; padding-top: 34px; }
+      h2 { font-size: 1.4rem; margin: 0 0 22px; letter-spacing: -.02em; }
+      .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+      .card { min-height: 128px; border: 1px solid var(--line); background: rgba(18,22,26,.82); padding: 18px; }
+      .card strong { display: block; color: var(--accent-soft); margin-bottom: 8px; }
+      .card p, li { color: var(--muted); }
+      .delivery { display: grid; grid-template-columns: 1fr 1fr; gap: 34px; }
+      ul { margin: 0; padding-left: 20px; }
+      li + li { margin-top: 8px; }
+      .notice { color: var(--muted); font-size: .9rem; border-left: 3px solid var(--accent); padding-left: 16px; }
+      footer { border-top: 1px solid var(--line); margin-top: 70px; padding-top: 20px; color: var(--muted); font-size: .85rem; display: flex; justify-content: space-between; gap: 18px; }
+      @media (max-width: 780px) { .hero, .delivery { grid-template-columns: 1fr; gap: 28px; } .grid { grid-template-columns: 1fr; } header { padding-bottom: 28px; } h1 { font-size: 3.8rem; } footer { display: block; } footer span { display: block; margin-top: 8px; } }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="brand">FORGE / 03</div>
+        <div class="tag">procedural asset lab · base</div>
+      </header>
+
+      <main>
+        <div class="hero">
+          <div>
+            <div class="tag">THREE.JS + VITE · LOW-POLY INDUSTRIAL</div>
+            <h1>Underground<br /><span>Drill Rig.</span></h1>
+            <p class="lead">A ready-to-integrate procedural 3D asset kit for game prototypes, cinematic scenes, interactive demos and technical-looking interfaces.</p>
+            <div class="actions">
+              <a class="button" href="https://crypto-fi.co/forge-drill-rig">View product &amp; buy</a>
+              <a class="button secondary" href="https://github.com/tiburzy-dev/forge-drill-rig-kit">Repository</a>
+            </div>
+            <div class="price">12 USDC · BASE NETWORK · DIGITAL DOWNLOAD</div>
+          </div>
+          <div class="preview">
+            <img src="assets/forge-03-preview.png" alt="Rendered low-poly underground drill rig in a dark asset-lab interface" />
+          </div>
+        </div>
+
+        <section>
+          <h2>Built for fast integration</h2>
+          <div class="grid">
+            <div class="card"><strong>30 named parts</strong><p>Editable procedural construction with clear integration points and a supplied sculpt specification.</p></div>
+            <div class="card"><strong>Six material presets</strong><p>Industrial metal, worn steel, hazard yellow and additional scene-ready combinations.</p></div>
+            <div class="card"><strong>Animation included</strong><p>Orbit camera, drill sequence controls, reset view and a Vite build ready for production handoff.</p></div>
+          </div>
+        </section>
+
+        <section class="delivery">
+          <div>
+            <h2>What arrives in the download</h2>
+            <ul>
+              <li>editable Three.js/Vite source and lockfile</li>
+              <li>rendered verification previews</li>
+              <li>usage, build and integration documentation</li>
+              <li>commercial-use license and third-party notices</li>
+            </ul>
+          </div>
+          <div>
+            <h2>Transparent by design</h2>
+            <p class="notice">The concept reference and parts of the implementation were AI-assisted. The package says so explicitly. This is a fictional visual asset, not an operational mining design.</p>
+            <p class="notice">Checkout and delivery run through Crypto-Fi. Its current product page shows the live price and payment flow; platform terms apply.</p>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <span>© 2026 FORGE / 03 · Digital asset listing</span>
+        <span><a href="https://crypto-fi.co/forge-drill-rig">Crypto-Fi checkout</a> · <a href="https://github.com/tiburzy-dev/forge-drill-rig-kit">Source page</a></span>
+      </footer>
+    </div>
+  </body>
+</html>
